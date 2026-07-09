@@ -8,7 +8,7 @@ class Servo:
     def write_servo(self, angle):
         self.init_servo()
         
-        sp(1.5)
+        sp(0.5)
 
         angle = int(angle)
         self.board.servo_write(self.servo, angle)
