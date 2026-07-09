@@ -8,10 +8,11 @@ board = pymata4.Pymata4("COM6", 57600)
 servo = Servo(9, board)
 
 path = Path("angle.txt")
+path_block = Path("block.txt")
 
 while True:
     angle = path.read_text()
-    path_block = Path("block.txt")
+    
     block = path_block.read_text()
     if block == "True":
         servo.write_servo(angle)
