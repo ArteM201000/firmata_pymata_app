@@ -1,8 +1,8 @@
 import streamlit as st
 from pathlib import Path
 
-path = Path("firmata_pymata_app/angle.txt")
-path_block = Path("firmata_pymata_app/block.txt")
+path = Path("C:\\Users\\admin\\OneDrive\\Документы\\GitHub\\firmata_pymata_app\\angle.txt")
+path_block = Path("C:\\Users\\admin\\OneDrive\\Документы\\GitHub\\firmata_pymata_app\\block.txt")
 
 st.header("Управление сервоприводом")
 
