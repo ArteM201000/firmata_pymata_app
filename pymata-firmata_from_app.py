@@ -12,7 +12,6 @@ path_block = Path("block.txt")
 
 while True:
     angle = path.read_text()
-    
     block = path_block.read_text()
     if block == "True":
         servo.write_servo(angle)
