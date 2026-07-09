@@ -1,8 +1,8 @@
 import streamlit as st
 from pathlib import Path
 
-path = Path("C:\\Windows\\System32\\angle.txt")
-path_block = Path("C:\\Windows\\System32\\block.txt")
+path = Path("angle.txt")
+path_block = Path("block.txt")
 
 st.header("Управление сервоприводом")
 
