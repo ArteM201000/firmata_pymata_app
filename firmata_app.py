@@ -1,12 +1,12 @@
 import streamlit as st
 from pathlib import Path
 
-path = Path("C:/Users/admin/Downloads/firmata/angle.txt")
-path_block = Path("C:/Users/admin/Downloads/firmata/block.txt")
+path = Path("angle.txt")
+path_block = Path("block.txt")
 
 st.header("Управление сервоприводом")
 
-angle = st.sidebar.radio("Выбери градус поворота:", [30, 60, 90, 120, 150, 180])
+angle = st.sidebar.radio("Выбери градус поворота:", [0, 30, 60, 90, 120, 150, 180])
 
 if st.button("Повернуть"):
     past_angle = path.read_text()
