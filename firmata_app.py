@@ -24,3 +24,5 @@ if st.button("Повернуть"):
         error_message()
     else:
         success_message()
+
+    st.write(path.resolve())
