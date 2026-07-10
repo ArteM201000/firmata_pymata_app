@@ -23,7 +23,7 @@ if st.button("Повернуть"):
         st.error("Серво уже повернут на этот угол, выбери другой")
         supabase.table("arduino_state").update({"state": False}).eq("id", 1).execute()
 
-    if past_angle == str(angle):
+    if past_angle == angle:
         error_message()
     else:
         success_message()
