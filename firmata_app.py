@@ -5,7 +5,7 @@ url = "https://wmzpahjpjkejfrzbewfz.supabase.co"
 key = "sb_publishable_O8Erz_dPQk3fBkmhopdY-g_UitSlzJZ"
 
 supabase = create_client(url, key)
-data = supabase.table("arduino_state").select("*").execute()
+data = supabase.table("arduino_state").select("*").execute().data[0]
 
 st.header("Управление сервоприводом")
 
