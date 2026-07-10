@@ -1,6 +1,13 @@
 import streamlit as st
 from supabase import create_client
 
+"""
+Это приложение отправляет данные на облако, из которого читает информацию цикл из закомментированного файла pymata-firmata_from_app.py, который управляет сервоприводом.
+Файл pymata-firmata_from_app.py должен быть запущен на компьютере, к которому подключен Arduino с сервоприводом и обязательно отдельно от этого приложения, иначе не будет работать, так как у streamlit
+нет доступа к COM портам.
+"""
+
+
 url = "https://wmzpahjpjkejfrzbewfz.supabase.co"
 key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndtenBhaGpwamtlamZyemJld2Z6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM2NjQ5MTcsImV4cCI6MjA5OTI0MDkxN30.mkiDSYFwrUdW0h4_W2Et13OlBz4gqAVrPMktTocrGvU"
 
