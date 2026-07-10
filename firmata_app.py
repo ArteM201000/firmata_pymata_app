@@ -2,7 +2,7 @@ import streamlit as st
 from supabase import create_client
 
 url = "https://wmzpahjpjkejfrzbewfz.supabase.co"
-key = "sb_publishable_O8Erz_dPQk3fBkmhopdY-g_UitSlzJZ"
+key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndtenBhaGpwamtlamZyemJld2Z6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM2NjQ5MTcsImV4cCI6MjA5OTI0MDkxN30.mkiDSYFwrUdW0h4_W2Et13OlBz4gqAVrPMktTocrGvU"
 
 supabase = create_client(url, key)
 data = supabase.table("arduino_state").select("*").execute().data[0]
