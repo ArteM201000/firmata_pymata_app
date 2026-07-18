@@ -20,12 +20,10 @@ if st.button("Повернуть"):
 
     def success_message():
         st.success(angle)
-        supabase.table("arduino_state").update({"angle": angle}).eq("id", 1).execute()
-        supabase.table("arduino_state").update({"state": True}).eq("id", 1).execute()
+        supabase.table("arduino_state").update({"angle": angle, "state": True}).eq("id", 1).execute()
 
     def error_message():
         st.error("Серво уже повернут на этот угол, выбери другой")
-        supabase.table("arduino_state").update({"state": False}).eq("id", 1).execute()
 
     if past_angle == angle:
         error_message()
