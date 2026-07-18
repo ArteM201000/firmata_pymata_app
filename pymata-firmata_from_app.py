@@ -3,7 +3,6 @@
 # from supabase import create_client
 # from servo_py import Servo
 
-# # password: firmata-pymata_1_project, project: https://wmzpahjpjkejfrzbewfz.supabase.co, key: sb_publishable_O8Erz_dPQk3fBkmhopdY-g_UitSlzJZ, table: https://wmzpahjpjkejfrzbewfz.supabase.co/rest/v1/arduino_state
 # board = pymata4.Pymata4("COM6", 57600)
 
 # url = "https://wmzpahjpjkejfrzbewfz.supabase.co"
